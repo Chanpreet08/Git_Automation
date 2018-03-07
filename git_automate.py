@@ -29,7 +29,6 @@ class GitAutomate:
         self.latest_tag = self.get_latest_tag()
         self.latest_tag = self.latest_tag + self.inc_ver
         self.latest_tag = 'v'+str(self.latest_tag)
-        print self.latest_tag
         self.repo.create_tag(self.latest_tag)
 
     def push_tag_to_origin(self):
