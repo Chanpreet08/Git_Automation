@@ -12,7 +12,7 @@ if [ $# -eq 0 ]
 
 		latest_tag=${tags[-1]}
 
-		curr_ver=${latest_tag:1:3}
+		curr_ver=${latest_tag:1}
 
 		new_ver=$(echo "$curr_ver + 0.1"|bc -l)
 
